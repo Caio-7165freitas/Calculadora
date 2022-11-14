@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="calc.png">
+    <title>Calculadora do JavaScript</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: darkblue;
+            font-size: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: blue;
+            text-shadow: 2px 3px red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Calculadora JavaScript</h1>
+    <label for="ValorNum1">Valor A: </label>
+    <input type="text" id="ValorNum1">
+    <br>
+    <br>
+    <label for="Operacoes">Operacoes: </label>
+    <select id="Operacoes">
+        <option value="">-- Operacoes --</option>
+        <option value="Soma">+</option>
+        <option value="Subtracao">-</option>
+        <option value="Divisao">/</option>
+        <option value="Multiplicacao">*</option>
+
+    </select>
+    <br>
+    <br>
+    <label for="ValorNum2">Valor B: </label>
+    <input type="text" id="ValorNum2">
+    <br>
+    <br>
+    <label for="Resultado">Resultado: </label>
+    <input type="text" id="Resultado">
+    <br>
+    <br>
+    <button onclick="calculaIF()">Calcular com IF</button>
+    <button onclick="calculaSwitch()">Calcular com Switch</button>
+    <button onclick="limpar()">Limpar</button>
+    <script src="Meucalc.js"></script>
+</body>
+
+</html>
